@@ -15,6 +15,7 @@ html {
     --hover-color: #2196F3;
     --primary-bcg-color: #F5F4FA;
     --secondary-bcg-color: #FFFFFF;
+    --icons-color:#AFB1B8;
 }
 
 body {
@@ -104,6 +105,7 @@ body {
     gap: 50px;
 }
 
+
 .nav .link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -116,7 +118,9 @@ body {
 }
 
 .nav-item {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-item:not(:last-child) {
@@ -146,6 +150,17 @@ body {
     color: var(--hover-color);
 }
 
+.envelope {
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+
+}
+
+.contacts:hover .envelope {
+  fill: var(--hover-color);
+}
+
+
 /* Hero */
 .hero {
     padding-top: 200px;
@@ -174,6 +189,7 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+
 
 /* Button */
 .main-button {
@@ -379,18 +395,40 @@ body {
     gap: 10px;
 }
 
-.team-social-items {}
-
-.team-social-links {
-        display: block;
-        width: 44px;
-        height: 44px;
-        /* background-color: var(--secondary-bcg-color); */
-        background-color: #188CE8;
-        border-radius: 50%;
-
+.team-social-items {
+    /* background-color: tomato;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px; */
 }
 
+.team-social-links {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        /* fill: var(--icons-color);
+        width: 44px;
+        height: 44px; */
+        width: 44px;
+        height: 44px;
+        background-color: var(--secondary-bcg-color);
+        border-radius: 50%;
+}
+
+.team-social-links:hover{
+    background-color: var(--hover-color);
+}
+
+.team-icon{
+    fill: var(--icons-color);
+}
+
+.team-social-links:hover .team-icon{
+   fill: var(--secondary-bcg-color);
+}
 
 /* Clients */
 
@@ -424,15 +462,22 @@ body {
 }
 .clients-item {
     width: calc((100% - 150px)/6);
+   
 }
 
 .clients-link {
-    display: block;
+    display: flex;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
-    border-radius: 4px3;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icons-color);
 
+}
+.clients-link-icon{
+   
 }
 /* Footer  */
 .footer {
@@ -521,13 +566,25 @@ gap: 10px;
 .soc-item {}
 
 .soc-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
+/* .soc-link :hover{
+    background-color: var(--hover-color);
+} */
+.soc-icon{
+    fill: var(--secondary-bcg-color);
+}
 
+.soc-link:hover{
+    background-color: var(--hover-color);
+}
 
 /* Portfolio */
 
