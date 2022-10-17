@@ -153,20 +153,33 @@ body {
 .envelope {
     margin-right: 10px;
     fill: var(--primary-text-color);
-
 }
 
 .contacts:hover .envelope {
   fill: var(--hover-color);
 }
 
+.smartphone{
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+.contacts:hover .smartphone {
+    fill: var(--hover-color);
+}
 
 /* Hero */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #2F303A;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+background-repeat: no-repeat;
+background-position: center;
+height: 600px;
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
+background-size: cover;
 }
 
 .hero-container {
@@ -265,7 +278,6 @@ body {
     margin-left: 0;
     margin-right: auto;
     margin-right: 30px;
-
 }
 
 .advantage-list-item:last-child {
@@ -286,6 +298,18 @@ body {
 .advantages-text {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.advantage-icon-card{
+    background-color: var(--primary-bcg-color);
+        display: flex;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 30px;
 }
 
 /* Our activity */
@@ -474,11 +498,15 @@ body {
     align-items: center;
     justify-content: center;
     fill: var(--icons-color);
+}
 
+.clients-link:hover{
+    border: 1px solid var(--hover-color);
 }
-.clients-link-icon{
-   
+.clients-link:hover .clients-link-icon {
+  fill: var(--hover-color);
 }
+
 /* Footer  */
 .footer {
     padding-top: 60px;
@@ -546,7 +574,6 @@ body {
 
 .footer-link-text{
     margin-top: 0;
-    margin-bottom: 20px;
     text-transform: uppercase;
     font-family: 'Roboto';
         font-style: normal;
@@ -563,7 +590,9 @@ justify-content: center;
 gap: 10px;
 }
 
-.soc-item {}
+.soc-item {
+
+}
 
 .soc-link {
     display: flex;
@@ -584,6 +613,25 @@ gap: 10px;
 
 .soc-link:hover{
     background-color: var(--hover-color);
+}
+
+.main-footer-container{
+    display: flex;
+    width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+    margin: 0 auto;
+justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer-navigation {
+width: 331px;
+margin: 0;
+padding: 0;
+}
+.links-container{
+margin-right: 601px;
 }
 
 /* Portfolio */
